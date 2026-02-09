@@ -1,123 +1,106 @@
+# Inventory & Sales Data Analysis
 
-📦 Inventory & Sales Data Analysis (Data Analyst Project)
-📌 Project Overview
+## Project Overview
+This project analyzes retail sales and inventory data to evaluate revenue performance,
+inventory efficiency, and short-term demand behavior. The goal is to extract
+operational insights that support business decision-making rather than build
+complex predictive models.
 
-This project analyzes retail sales and inventory data to assess revenue performance, inventory efficiency, and short-term demand behavior.
+Due to the limited historical time span of the available data (January–February 2016),
+the analysis focuses on descriptive and diagnostic analytics instead of long-term
+forecasting.
 
-The objective is to extract operational insights that support business decision-making, such as identifying demand changes, inventory risks, and stock movement patterns.
+---
 
-Due to the limited historical time span (January–February 2016), the analysis focuses on descriptive and diagnostic analytics rather than long-term forecasting.
+## Business Objectives
+- Analyze month-over-month sales performance
+- Evaluate changes in revenue and units sold
+- Assess inventory turnover and stock efficiency
+- Identify dead stock, slow-moving, healthy, and fast-moving inventory
+- Demonstrate demand comparison under real-world data constraints
 
-🎯 Business Objectives
+---
 
-Analyze month-over-month sales performance
+## Datasets Used
+The analysis uses multiple structured CSV datasets, including:
+- Sales transaction data
+- Purchase records
+- Beginning and ending inventory snapshots
+- Invoice-level purchase details
+- Product pricing information
 
-Evaluate units sold and revenue changes
+> Note: Due to GitHub file size limits, large CSV files are not included in this repository.
 
-Assess inventory turnover and stock efficiency
+---
 
-Identify dead stock, slow-moving, and fast-moving inventory
+## Analysis Workflow
 
-Demonstrate baseline demand comparison under data constraints
+### 1. Data Preparation
+- Data cleaning and validation
+- Date standardization
+- Monthly aggregation of sales data
 
-📂 Datasets Used
+### 2. Sales Performance Analysis
+- Month-over-month revenue comparison
+- Month-over-month units sold comparison
+- Visualizations designed to avoid misleading trend interpretation
 
-The project uses multiple structured CSV datasets, including:
+### 3. Key Performance Indicators (KPIs)
+- Percentage change in total revenue
+- Percentage change in total units sold
 
-Sales transactions
+These KPIs provide a concise business-level summary of performance shifts.
 
-Purchase records
-
-Beginning and ending inventory
-
-Invoice-level purchase details
-
-Product pricing information
-
-Note: Large CSV files are not uploaded to this repository due to GitHub size limits.
-
-🧠 Analysis Approach
-1. Data Preparation
-
-Data cleaning and type correction
-
-Date standardization
-
-Monthly aggregation of sales data
-
-2. Sales Performance Analysis
-
-Month-over-month revenue comparison
-
-Month-over-month units sold comparison
-
-Clear visualization without overstating trends
-
-3. Key Performance Indicators (KPIs)
-
-Percentage change in revenue
-
-Percentage change in units sold
-These KPIs provide a concise business-level view of performance shifts.
-
-4. Inventory Analysis
-
-Inventory turnover calculation
-
-Distribution analysis of turnover values
-
-Segmentation of inventory into:
-
-Dead Stock
-
-Slow Moving
-
-Healthy
-
-Fast Moving
+### 4. Inventory Analysis
+- Inventory turnover calculation
+- Distribution analysis of turnover values
+- Inventory segmentation into:
+  - Dead Stock
+  - Slow Moving
+  - Healthy
+  - Fast Moving
 
 This segmentation supports inventory planning and working capital decisions.
 
-5. Demand Comparison (Data-Constrained)
+### 5. Demand Comparison (Data-Constrained Analysis)
+- Month-over-month demand comparison using discrete observations
+- No long-term forecasting applied due to insufficient historical data
 
-Month-over-month demand comparison using discrete observations
+---
 
-No long-term forecasting applied due to insufficient historical depth
+## Key Insights
+- Revenue and units sold declined significantly from January to February 2016
+- A substantial portion of inventory shows low or zero turnover, indicating overstock risk
+- Fast-moving products require careful replenishment despite demand volatility
+- Inventory strategy should prioritize reducing dead stock and protecting high-velocity items
 
-📊 Key Insights
+---
 
-Significant decline in revenue and units sold from January to February 2016
+## Limitations
+- Short historical time span limits trend and seasonality analysis
+- No pricing elasticity or customer segmentation included
+- Results should be interpreted as operational insights, not predictive outcomes
 
-A meaningful portion of inventory shows low or zero turnover, indicating potential overstock risk
+---
 
-Fast-moving products require careful replenishment despite demand volatility
+## Future Enhancements
+- Multi-period demand forecasting with extended historical data
+- SKU-level inventory optimization models
+- Integration of pricing, promotions, and lead-time effects
+- Advanced supply-chain performance metrics
 
-Inventory optimization should prioritize reducing dead stock and protecting high-velocity items
+---
 
-⚠️ Limitations
+## Tools & Technologies
+- Python
+- Pandas, NumPy
+- Matplotlib
+- Google Colab / Jupyter Notebook
 
-Analysis limited to a short historical period
+---
 
-No seasonality or long-term trend inference
+## Author
+Tejas  
+Data Analyst Intern  
+Unified Mentor
 
-No pricing elasticity or customer segmentation analysis
-
-🚀 Future Enhancements
-
-Multi-period demand forecasting with extended historical data
-
-SKU-level predictive inventory optimization
-
-Integration of pricing and promotion effects
-
-Advanced supply-chain metrics (lead time, service level)
-
-🛠️ Tools & Technologies
-
-Python
-
-Pandas, NumPy
-
-Matplotlib
-
-Google Colab / Jupyter Notebook
