@@ -1,89 +1,123 @@
 
-# Inventory, Sales & Profitability Analysis 
+📦 Inventory & Sales Data Analysis (Data Analyst Project)
+📌 Project Overview
 
-## Overview
-This project applies data analysis techniques to retail business data
-to evaluate sales performance, inventory efficiency, and product-level
-profitability.
+This project analyzes retail sales and inventory data to assess revenue performance, inventory efficiency, and short-term demand behavior.
 
-The focus is on transforming raw transactional data into structured,
-actionable insights that support operational and financial decision-making.
+The objective is to extract operational insights that support business decision-making, such as identifying demand changes, inventory risks, and stock movement patterns.
 
----
+Due to the limited historical time span (January–February 2016), the analysis focuses on descriptive and diagnostic analytics rather than long-term forecasting.
 
-## Business Problem
-Retail organizations often face challenges such as:
-- Identifying true revenue drivers
-- Managing slow-moving or dead inventory
-- Understanding profitability beyond top-line sales
+🎯 Business Objectives
 
-This project addresses these challenges by integrating sales, inventory,
-and cost data into a single analytical workflow.
+Analyze month-over-month sales performance
 
----
+Evaluate units sold and revenue changes
 
-## Objectives
-- Analyze historical sales data to identify trends and seasonality
-- Measure inventory turnover to assess inventory efficiency
-- Estimate unit costs and calculate gross profit and margins
-- Identify underperforming and value-destroying products
-- Translate analytical results into actionable business insights
+Assess inventory turnover and stock efficiency
 
----
+Identify dead stock, slow-moving, and fast-moving inventory
 
-## Datasets
-The analysis is based on multiple structured retail datasets, including:
-- Sales transaction data
-- Purchase and invoice records
-- Beginning and ending inventory snapshots
-- Historical purchase price data
+Demonstrate baseline demand comparison under data constraints
 
-### Data Availability
-Due to file size limitations, the raw CSV datasets are not included in this
-repository.  
-The datasets were provided as part of the internship project and can be
-made available upon request.
+📂 Datasets Used
 
----
+The project uses multiple structured CSV datasets, including:
 
-## Analysis Performed
-- **Sales Revenue Analysis**
-  - Monthly sales trends
-  - Revenue distribution across products
+Sales transactions
 
-- **Inventory Analysis**
-  - Inventory turnover calculation
-  - Identification of slow-moving and zero-turnover SKUs
+Purchase records
 
-- **Cost & Profitability Analysis**
-  - Average unit cost estimation
-  - Gross profit and gross margin computation
-  - Detection of low and negative margin products
+Beginning and ending inventory
 
-- **Business Insights & Recommendations**
-  - Inventory rationalization opportunities
-  - Margin-based product prioritization
-  - Cost optimization considerations
+Invoice-level purchase details
 
----
+Product pricing information
 
-## Tools & Technologies
-- Python
-- Pandas, NumPy
-- Matplotlib
-- Jupyter Notebook / Google Colab
+Note: Large CSV files are not uploaded to this repository due to GitHub size limits.
 
----
+🧠 Analysis Approach
+1. Data Preparation
 
-## How to Use
-1. Open the Jupyter Notebook (`.ipynb`) file
-2. Review the analysis cells and outputs
-3. Follow the documented workflow and insights
+Data cleaning and type correction
 
----
+Date standardization
 
-## Key Outcomes
-- Identified concentration of revenue among a limited set of products
-- Revealed significant inventory inefficiencies and dead stock
-- Highlighted gaps between revenue and profitability
-- Demonstrated a data-driven approach to retail performance analysis
+Monthly aggregation of sales data
+
+2. Sales Performance Analysis
+
+Month-over-month revenue comparison
+
+Month-over-month units sold comparison
+
+Clear visualization without overstating trends
+
+3. Key Performance Indicators (KPIs)
+
+Percentage change in revenue
+
+Percentage change in units sold
+These KPIs provide a concise business-level view of performance shifts.
+
+4. Inventory Analysis
+
+Inventory turnover calculation
+
+Distribution analysis of turnover values
+
+Segmentation of inventory into:
+
+Dead Stock
+
+Slow Moving
+
+Healthy
+
+Fast Moving
+
+This segmentation supports inventory planning and working capital decisions.
+
+5. Demand Comparison (Data-Constrained)
+
+Month-over-month demand comparison using discrete observations
+
+No long-term forecasting applied due to insufficient historical depth
+
+📊 Key Insights
+
+Significant decline in revenue and units sold from January to February 2016
+
+A meaningful portion of inventory shows low or zero turnover, indicating potential overstock risk
+
+Fast-moving products require careful replenishment despite demand volatility
+
+Inventory optimization should prioritize reducing dead stock and protecting high-velocity items
+
+⚠️ Limitations
+
+Analysis limited to a short historical period
+
+No seasonality or long-term trend inference
+
+No pricing elasticity or customer segmentation analysis
+
+🚀 Future Enhancements
+
+Multi-period demand forecasting with extended historical data
+
+SKU-level predictive inventory optimization
+
+Integration of pricing and promotion effects
+
+Advanced supply-chain metrics (lead time, service level)
+
+🛠️ Tools & Technologies
+
+Python
+
+Pandas, NumPy
+
+Matplotlib
+
+Google Colab / Jupyter Notebook
